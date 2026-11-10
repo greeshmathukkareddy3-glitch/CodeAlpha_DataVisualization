@@ -1,0 +1,33 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Step 1: Create Dataset
+data = {
+    "Name": ["Ravi", "Sita", "Ram", "Priya", "John"],
+    "Maths": [85, 90, 70, 95, 80],
+    "Science": [80, 85, 75, 90, 88]
+}
+
+df = pd.DataFrame(data)
+
+# Step 2: Display Dataset
+print("Student Dataset:")
+print(df)
+
+# Step 3: Dataset Information
+print("\nDataset Information:")
+df.info()
+
+# Step 4: Statistical Analysis
+print("\nStatistical Analysis:")
+print(df.describe())
+
+# Step 5: Missing Values
+print("\nMissing Values:")
+print(df.isnull().sum())
+
+# Step 6: Duplicate Values
+print("\nDuplicate Rows:")
+print(df.duplicated().sum())
+
+print("\nDataset Analysis Completed!")

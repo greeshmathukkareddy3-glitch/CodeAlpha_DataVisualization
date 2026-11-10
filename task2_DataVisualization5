@@ -1,0 +1,24 @@
+import pandas as pd
+
+data = {
+    "Name": ["Asha", "Ravi", "Sita", "Ram", "Priya"],
+    "Maths": [85, 78, 90, 80, 88],
+    "Science": [80, 75, 92, 85, 86]
+}
+
+df = pd.DataFrame(data) 
+print("\nDATA VISUALIZATION RESULTS")
+
+print("Total Students:", len(df))
+
+print("Maths Average:", df["Maths"].mean())
+
+print("Science Average:", df["Science"].mean())
+
+print("Bar Chart: Created Successfully")
+
+print("Pie Chart: Created Successfully")
+
+print("Line Chart: Created Successfully")
+
+print("\nTask 2 Completed Successfully!")

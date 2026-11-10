@@ -1,0 +1,17 @@
+# Step 1: Import Libraries
+import pandas as pd
+import matplotlib.pyplot as plt
+
+print("Libraries Imported Successfully")
+
+# Step 2: Create Dataset
+data = {
+    "Name": ["Ravi", "Sita", "Ram", "Priya", "John"],
+    "Maths": [85, 90, 70, 95, 80],
+    "Science": [80, 85, 75, 90, 88]
+}
+
+df = pd.DataFrame(data)
+
+print("Dataset Created Successfully")
+print(df)

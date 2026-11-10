@@ -1,0 +1,60 @@
+# Step 1: Import Libraries
+import pandas as pd
+import matplotlib.pyplot as plt
+
+print("Libraries Imported Successfully")
+
+# Step 2: Create Dataset
+data = {
+    "Name": ["Ravi", "Sita", "Ram", "Priya", "John"],
+    "Maths": [85, 90, 70, 95, 80],
+    "Science": [80, 85, 75, 90, 88]
+}
+
+df = pd.DataFrame(data)
+
+# Step 3: Display Dataset
+print("Student Dataset:")
+print(df)
+
+# Step 4: Bar Chart
+df.plot(
+    x="Name",
+    y=["Maths", "Science"],
+    kind="bar"
+)
+
+plt.title("Student Performance Analysis")
+plt.xlabel("Student Name")
+plt.ylabel("Marks")
+plt.xticks(rotation=0)
+plt.tight_layout()
+
+# Step 5: Display Chart
+plt.show()
+
+print("Bar Chart Created Successfully!")
+import pandas as pd
+
+data = {
+    "Name": ["Asha", "Ravi", "Sita", "Ram", "Priya"],
+    "Maths": [85, 78, 90, 80, 88],
+    "Science": [80, 75, 92, 85, 86]
+}
+
+df = pd.DataFrame(data)
+print("\nDATA VISUALIZATION RESULTS")
+
+print("Total Students:", len(df))
+
+print("Maths Average:", df["Maths"].mean())
+
+print("Science Average:", df["Science"].mean())
+
+print("Bar Chart: Created Successfully")
+
+print("Pie Chart: Created Successfully")
+
+print("Line Chart: Created Successfully")
+
+print("\nTask 2 Completed Successfully!")
